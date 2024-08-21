@@ -1,0 +1,23 @@
+.hero {
+  color: $white;
+  background-color: $basic-green;
+  text-align: center;
+}
+
+.hero__heading {
+  @include title;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__slogan {
+  @include title;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+.hero__button {
+  color: $white;
+  background-color: $basic-green;
+  padding: 10px;
+}

@@ -1,0 +1,9 @@
+.description__heading {
+  @include title;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.description__list {
+  @include list-style;
+}

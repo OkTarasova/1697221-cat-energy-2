@@ -7,3 +7,20 @@
     font-display: swap;
   }
 }
+
+@mixin link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin title {
+  font-family: $secondary-font;
+  font-weight: 400;
+}
+
