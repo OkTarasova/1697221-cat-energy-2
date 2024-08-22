@@ -4,14 +4,8 @@
   text-align: center;
 }
 
-.hero__heading {
-  @include title;
-  font-size: 36px;
-  line-height: 36px;
-}
-
 .hero__slogan {
-  @include title;
+  font-family: $secondary-font;
   text-transform: uppercase;
   line-height: 14px;
 }
