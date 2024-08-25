@@ -104,7 +104,7 @@ body {
 
 .hero {
   color: #ffffff;
-  background-color: #68b738;
+  background: url("../images/hero-background-mobile@1x.jpg") no-repeat, linear-gradient(#68b738 302px, #ffffff 302px);
   text-align: center;
 }
 
