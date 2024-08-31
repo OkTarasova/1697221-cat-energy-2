@@ -23,3 +23,16 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+.example__image-changing-toggle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  // background-color: $white;
+  mask-image: url("../../icons/stack.svg#slider-arrows-icon");
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  background-position: center;
+  border: 2px solid $special-grey-2;
+}
