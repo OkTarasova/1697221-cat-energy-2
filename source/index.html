@@ -22,8 +22,16 @@
     <!-- Лого магазина -->
 
     <a class="page-header__logo-link header-logo-link" href="#">
-      <img class="header-logo-link__logo-image" src="#" width="33" height="38" alt="Логотип с котиком">
-      <img class="header-logo-link__name-image company-name-image" src="#" width="101" height="18" alt="Cat Energy.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/index/logo/company-name.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/index/logo/company-name.svg" width="101" height="18" type="image/svg+xml">
+        <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
 
     <!-- Навигация -->
@@ -155,15 +163,17 @@
 
     <!-- Лого магазина -->
 
-    <a class="page-footer__logo-link" href="#">
-      <img class="company-name-image company-name-image--medium" width="128" height="24" src="index.html" alt="Cat Energy">
+    <a class="page-footer__logo-link" href="index.html">
+      <img class="company-name-image company-name-image--medium" width="128" height="24" src="images/index/logo/company-name.svg" alt="Cat Energy.">
     </a>
 
     <!-- Соцсети -->
 
     <ul class="page-footer__social-list">
       <li class="page-footer__social-item">
-        <a class="social-link social-link--vk" href="#"><span class="visually-hidden">Мы ВКонтакте.</span></a>
+        <a class="social-link social-link--vk" href="#"><span class="visually-hidden">Мы ВКонтакте.</span>
+
+        </a>
       </li>
       <li class="page-footer__social-item">
         <a class="social-link social-link--youtube" href="#"><span class="visually-hidden">Наш канал на Youtube.</span></a>
