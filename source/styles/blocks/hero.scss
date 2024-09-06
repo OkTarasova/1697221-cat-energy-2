@@ -5,7 +5,7 @@
     url("../../images/index/hero/hero-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto, 320px auto;
+  background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -23,7 +23,7 @@
       linear-gradient(90deg, $white 50%, $basic-green-transparent 50%),
       url("../../images/index/hero/hero-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left, right;
+    background-position: right;
     background-size: 100% auto, 50% auto;
 
     @media (min-resolution: 2dppx) {
@@ -41,7 +41,5 @@
 }
 
 .hero__button {
-  color: $white;
-  background-color: $basic-green;
   padding: 10px;
 }
