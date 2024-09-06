@@ -56,15 +56,27 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 .button--main {
-  background-color: #68b738;
   color: #ffffff;
+  background-color: #68b738;
+}
+.button--main:hover, .button--main:focus {
+  background-color: #5eaa2f;
+}
+.button--main:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-additional {
+  color: #444444;
   background-color: #f2f2f2;
+}
+.button-additional:hover, .button-additional:focus, .button-additional:active {
+  background-color: #ebebeb;
 }
 
 .heading {
@@ -101,13 +113,46 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav__toggle--close {
+  background-image: url("../icons/stack.svg#menu-cross");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-link:active {
+  opacity: 0.6;
+}
 
 .hero {
   color: #ffffff;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../images/index/hero/hero-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto, 320px auto;
+  background-size: 100% auto;
 }
 @media (min-resolution: 2dppx) {
   .hero {
@@ -124,7 +169,7 @@ body {
   .hero {
     background-image: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../images/index/hero/hero-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left, right;
+    background-position: right;
     background-size: 100% auto, 50% auto;
   }
 }
@@ -141,8 +186,6 @@ body {
 }
 
 .hero__button {
-  color: #ffffff;
-  background-color: #68b738;
   padding: 10px;
 }
 
@@ -196,12 +239,23 @@ body {
   line-height: 37px;
 }
 
+.programs__description::after {
+  content: "";
+  display: block;
+  margin-top: 23px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
 .programs__button {
   display: flex;
   align-items: center;
   padding: 4px 0;
   color: #000000;
   text-decoration: none;
+}
+.programs__button:active {
+  opacity: 0.3;
 }
 
 .programs__button::after {
@@ -313,20 +367,93 @@ body {
   background-color: #f2f2f2;
 }
 
+.page-footer__logo-link:hover, .page-footer__logo-link:focus {
+  opacity: 0.8;
+}
+.page-footer__logo-link:active {
+  opacity: 0.6;
+}
+
 .page-footer__social-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.social__link {
+  position: relative;
+  display: block;
+  min-width: 28px;
+  min-height: 22px;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  background-color: #666666;
+}
+
+.social__link:hover::before,
+.social__link:focus::before {
+  background-color: #68b738;
+}
+
+.social__link:active::before {
+  background-color: #68b738;
+  opacity: 0.3;
+}
+
+.social__link--vk::before {
+  mask-image: url("../icons/stack.svg#vk");
+}
+
+.social__link--youtube::before {
+  mask-image: url("../icons/stack.svg#youtube");
+}
+
+.social__link--telegram::before {
+  mask-image: url("../icons/stack.svg#telegram");
+}
+
 .copyright {
-  color: #000000;
+  color: #444444;
   text-decoration: none;
 }
 
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
+}
+
+.copyright__text::after {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../icons/stack.svg#htmlacademy-logo");
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+  background-color: #666666;
+}
+
+.copyright:hover .copyright__text::after,
+.copyright:focus .copyright__text::after {
+  background-color: #68b738;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright:active .copyright__text::after {
+  background-color: #68b738;
 }
 
 .catalog .map {
