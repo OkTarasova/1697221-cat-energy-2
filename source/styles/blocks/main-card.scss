@@ -1,3 +1,16 @@
+.main-card {
+  padding: 20px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 38px 40px;
+  }
+}
+
 .main-card__link {
   @include link;
 }
