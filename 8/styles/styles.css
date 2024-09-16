@@ -23,6 +23,7 @@
 }
 
 img {
+  display: block;
   width: 100%;
   object-fit: contain;
 }
@@ -158,6 +159,26 @@ body {
   background-position: center;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo-link {
+  width: 190px;
+}
+@media (min-width: 768px) {
+  .page-header__logo-link {
+    width: 174px;
+    margin-right: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__logo-link {
+    width: 202px;
+  }
+}
+
 .page-header__logo-link:hover {
   opacity: 0.8;
 }
@@ -205,6 +226,23 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 14px;
+}
+
+.hero-image {
+  width: 280px;
+  height: 270;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    width: 709px;
+    height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-image {
+    width: 552px;
+    height: auto;
+  }
 }
 
 .hero__button {
@@ -606,16 +644,17 @@ body {
 }
 @media (min-width: 768px) {
   .assortment__main-list {
-    margin: 0 30px;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
-    align-items: end;
+    align-items: stretch;
   }
 }
 @media (min-width: 1440px) {
   .assortment__main-list {
     max-width: 1220px;
+    padding: 0;
     margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
@@ -724,6 +763,7 @@ body {
 @media (min-width: 768px) {
   .main-card {
     padding: 12px 37px 40px;
+    background-image: linear-gradient(transparent 80px, #f2f2f2 80px);
   }
 }
 @media (min-width: 1440px) {
@@ -759,6 +799,8 @@ body {
   .show-more {
     padding: 50px 37px 40px;
     background-size: 60px 60px;
+    border: 2px solid #f2f2f2;
+    align-self: end;
   }
 }
 @media (min-width: 1440px) {
