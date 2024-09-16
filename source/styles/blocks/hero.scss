@@ -43,6 +43,21 @@
   line-height: 14px;
 }
 
+.hero-image {
+  width: 280px;
+  height: 270;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: auto;
+  }
+}
+
 .hero__button {
   padding: 10px;
 }

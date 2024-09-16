@@ -4,6 +4,8 @@
   @media (min-width: $tablet-width) {
     padding: 50px 37px 40px;
     background-size: 60px 60px;
+    border: 2px solid $basic-grey;
+    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
