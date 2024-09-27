@@ -13,45 +13,46 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
 
   <!-- Шапка -->
 
-  <header class="page-header container">
+  <header class="page-header">
+    <div class="page-header__container container">
+      <!-- Лого магазина -->
 
-    <!-- Лого магазина -->
+      <a class="page-header__logo-link header-logo-link" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
+          <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
+        </picture>
+      </a>
 
-    <a class="page-header__logo-link header-logo-link" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
-        <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
-      </picture>
-    </a>
+      <!-- Навигация -->
 
-    <!-- Навигация -->
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="#">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--close button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Основной контент -->
@@ -64,6 +65,7 @@
       <div class="container">
         <h1 class="hero__heading heading heading--main">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <!-- <img class="hero-image" src="images/index/hero/hero-can-mobile@1x.png" srcset="images/index/hero/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Pro со вкусом курицы."> -->
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index/hero/hero-can-desktop@1x.png 1x, images/index/hero/hero-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index/hero/hero-can-tablet@1x.png 1x, images/index/hero/hero-can-tablet@2x.png 2x">

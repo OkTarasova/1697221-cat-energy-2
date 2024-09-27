@@ -1,11 +1,24 @@
 .description {
   padding-top: 20px;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
 }
 
 .description__heading {
-  font-size: 36px;
-  line-height: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .description__list {
@@ -15,15 +28,26 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    counter-reset: item 0;
     flex-direction: row;
     justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 37px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
 .description__item {
   @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: item 1;
+    padding-top: 40px;
+    padding-bottom: 57px;
     min-width: 324px;
+    min-height: 280px;
     flex-basis: 45%;
   }
 
@@ -41,6 +65,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .description__item--beneficial-nutrients::before {
@@ -61,4 +89,22 @@
 .description__item--resultes-time::before {
   background-image: url("../../icons/stack.svg#clock-icon");
   background-size: 26px 30px;
+}
+
+.description__item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: counter(item);
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.description__text {
+  margin: 0;
 }

@@ -13,7 +13,7 @@
 }
 
 .main-card__link {
-  @include link;
+  text-decoration: none;
 }
 
 .main-card__heading {
