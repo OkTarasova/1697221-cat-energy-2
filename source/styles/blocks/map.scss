@@ -1,12 +1,60 @@
+.map {
+  @media (min-width: $desktop-width) {
+    min-height: 440px;
+    background-color: $basic-green;
+  }
+}
+
+.map .container {
+  position: relative;
+}
+
 .map__wrapper {
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 50px;
+    top: 95px;
+    background-color: $white;
+    width: 565px;
+    padding: 60px 80px;
+  }
 }
 
 .map__heading {
+  width: 140px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .map__address {
+  width: 140px;
   font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    text-align: right;
+  }
+}
+
+.map__text {
+  margin: 0;
+}
+
+.map__text + .map__text {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }

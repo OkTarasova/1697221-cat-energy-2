@@ -2,21 +2,40 @@
   @include list-style;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
 
+  @media (max-width: $mobile-width) {
+    left: 0;
+    width: 100%;
+    top: 100%;
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     min-width: 436px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 20px 30px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 475px;
-    max-width: 720px;
+    max-width: 580px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__item {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .main-nav__item:last-child {
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -41,41 +60,91 @@
 }
 
 .main-nav__link {
+  display: block;
   font-family: $secondary-font;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
 
+  @media (max-width: $mobile-width) {
+    padding: 22px 20px;
+  }
+
   @media (min-width: $desktop-width) {
     color: $white;
   }
+}
 
-  &:hover {
-    opacity: 0.6;
-  }
+.main-nav__item:hover {
+  opacity: 0.6;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.main-nav__item:active {
+  opacity: 0.3;
 }
 
 .main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
+  display: none;
+}
 
-  &:hover {
-    opacity: 0.6;
+@media (max-width: $mobile-width) {
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    padding: 0;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
-  &:active {
-    opacity: 0.3;
+  .main-nav--closed .main-nav__toggle {
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/stack.svg#burger-menu");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 22px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../icons/stack.svg#menu-cross");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .main-nav__list {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item:last-child {
+    border-bottom: none;
   }
 }
 
-.main-nav__toggle--close {
-  background-image: url("../../icons/stack.svg#menu-cross");
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  background-position: center;
-}

@@ -26,13 +26,4 @@ body {
   min-width: $min-width;
   min-height: 100%;
   margin: 0;
-  font-family: $base-font;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark-grey;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }

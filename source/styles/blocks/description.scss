@@ -5,13 +5,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 45px;
     padding-bottom: 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
     padding-bottom: 69px;
+    border: none;
   }
 }
+
 
 .description__heading {
   margin-bottom: 40px;
@@ -23,44 +26,46 @@
 
 .description__list {
   @include list-style;
-  display: flex;
-  flex-flow: column wrap;
-  row-gap: 20px;
+  display: grid;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     counter-reset: item 0;
-    flex-direction: row;
-    justify-content: space-between;
-    row-gap: 37px;
-    padding-right: 75px;
+    grid-template-columns: repeat(2, minmax(324px, 599px));
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    grid-template-columns: repeat(4, 250px);
+    gap: 37px 73px;
   }
 }
 
 .description__item {
+  display: flex;
+  gap: 20px;
+
   @media (min-width: $tablet-width) {
     position: relative;
+    flex-direction: column;
+    align-items: flex-start;
     counter-increment: item 1;
     padding-top: 40px;
+    padding-right: 74px;
     padding-bottom: 57px;
-    min-width: 324px;
     min-height: 280px;
-    flex-basis: 45%;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 250px;
-    flex-basis: 20%;
   }
 }
 
 .description__item::before {
   content: "";
   display: block;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,6 +108,22 @@
     right: 0;
     z-index: -1;
   }
+}
+
+.description__item:nth-child(1)::after {
+  right: 100px;
+}
+
+.description__item:nth-child(2)::after {
+  right: 77px;
+}
+
+.description__item:nth-child(3)::after {
+  right: 77px;
+}
+
+.description__item:nth-child(4)::after {
+  right: 68px;
 }
 
 .description__text {

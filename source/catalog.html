@@ -17,41 +17,43 @@
 
   <!-- Шапка -->
 
-  <header class="page-header container">
+  <header class="page-header page-header--inner">
+    <div class="container">
 
-    <!-- Лого магазина -->
+      <!-- Лого магазина -->
 
-    <a class="page-header__logo-link header-logo-link" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
-        <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
-      </picture>
-    </a>
+      <a class="page-header__logo-link header-logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
+          <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
+        </picture>
+      </a>
 
-    <!-- Навигация -->
+      <!-- Навигация -->
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="#">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-nav main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Основной контент -->
@@ -348,7 +350,7 @@
   <!-- Футер -->
 
   <footer class="page-footer">
-    <div class="page-footer__container container">
+    <div class="container">
 
       <!-- Лого магазина -->
 
