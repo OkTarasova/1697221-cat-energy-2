@@ -25,7 +25,57 @@
   }
 }
 
+.heading--inner {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    font-size: 40px;
+  }
+}
+
+.heading--inner::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1000%;
+  right: -1000%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background-color: $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .heading--inner::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1000%;
+    left: -1000%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: $basic-green;
+  }
+}
+
 .heading--card {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

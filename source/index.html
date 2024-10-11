@@ -18,41 +18,39 @@
   <!-- Шапка -->
 
   <header class="page-header">
-    <div class="container">
-      <!-- Лого магазина -->
+    <!-- Лого магазина -->
 
-      <a class="page-header__logo-link header-logo-link" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
-          <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
-        </picture>
-      </a>
+    <a class="page-header__logo-link header-logo-link" href="#">
+      <picture>
+        <source media="(min-width: 1320px)" srcset="images/index/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/index/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="header-logo-link__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип с котиком.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1320px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/index/logo/company-name-tablet-desktop.svg" width="101" height="18" type="image/svg+xml">
+        <img class="header-logo-link__name-image company-name-image" src="images/index/logo/company-name-mobile.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
+    </a>
 
-      <!-- Навигация -->
+    <!-- Навигация -->
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Основной контент -->
@@ -82,12 +80,12 @@
         <li class="programs__item programs__item--loss">
           <h3 class="programs__heading heading">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__button button" href="#">Каталог slim</a>
+          <a class="programs__button button" href="#"><span class="programs__button-text">Каталог slim</span></a>
         </li>
         <li class="programs__item programs__item--gain">
           <h3 class="programs__heading heading">Набор массы</h3>
           <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__button button" href="#">Каталог pro</a>
+          <a class="programs__button button" href="#"><span class="programs__button-text">Каталог pro</span></a>
         </li>
       </ul>
     </section>
@@ -131,20 +129,24 @@
           </li>
         </ul>
         <p class="example__text">Затраты на питание: <span class="example__text-sum">15 000 РУБ.</span></p>
-        <div class="example__slider-wrapper">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/index/example/fat-cat-tablet-desktop@1x.png 1x, images/index/example/fat-cat-tablet-desktop@2x.png 2x">
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/example/fat-cat-tablet-desktop@1x.png 1x, images/index/example/fat-cat-tablet-desktop@2x.png 2x">
-            <img class="example__image example__image--fat-cat" src="images/index/example/fat-cat-mobile@1x.png" srcset="images/index/example/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик.">
-          </picture>
-          <button class="example__image-changing-toggle" type="button">
+        <div class="example__slider">
+          <div class="example__slider-image-container">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 1320px)" srcset="images/index/example/fat-cat-tablet-desktop@1x.png 1x, images/index/example/fat-cat-tablet-desktop@2x.png 2x">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/example/fat-cat-tablet-desktop@1x.png 1x, images/index/example/fat-cat-tablet-desktop@2x.png 2x">
+              <img class="example__slider-image example__image--fat-cat" src="images/index/example/fat-cat-mobile@1x.png" srcset="images/index/example/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик.">
+            </picture>
+          </div>
+          <button class="example__slider-toggle" type="button">
             <span class="visually-hidden">Изменить изображение.</span>
           </button>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/index/example/slim-cat-tablet-desktop@1x.png 1x, images/index/example/slim-cat-tablet-desktop@2x.png 2x">
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/example/slim-cat-tablet-desktop@1x.png 1x, images/index/example/slim-cat-tablet-desktop@2x.png 2x">
-            <img class="example__image example__image--slim-cat" src="images/index/example/slim-cat-mobile@1x.png" srcset="images/index/example/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик.">
-          </picture>
+          <div class="example__slider-image-container">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 1320px)" srcset="images/index/example/slim-cat-tablet-desktop@1x.png 1x, images/index/example/slim-cat-tablet-desktop@2x.png 2x">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/example/slim-cat-tablet-desktop@1x.png 1x, images/index/example/slim-cat-tablet-desktop@2x.png 2x">
+              <img class="example__slider-image example__image--slim-cat" src="images/index/example/slim-cat-mobile@1x.png" srcset="images/index/example/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик.">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -152,6 +154,7 @@
     <!-- Предложение о сотрудничестве и контакты -->
 
     <section class="map">
+
       <div class="container">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Сотрудничество</h2>
@@ -162,7 +165,7 @@
           </address>
         </div>
       </div>
-      <div class="map__image"></div>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.69" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
     </section>
   </main>
 

@@ -1,20 +1,20 @@
 .assortment__main-list {
   @include list-style;
+  margin: 0 auto 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 142px 60px;
     align-items: stretch;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 0;
-    margin: 0 auto;
+    max-width: $desktop-width;
+    padding: 0 50px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 144px 80px;
   }
 }
 
@@ -22,86 +22,13 @@
   color: $dark-grey;
 }
 
-.assortment__heading {
-  font-size: 24px;
-  line-height: 24px;
-}
+@media (max-width: $mobile-width) {
+  .assortment__main-item {
+    border-top: 1px solid $light-grey;
+  }
 
-.assortment__additional-container {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+  .assortment__main-item:last-child {
+    border-bottom: 1px solid $light-grey;
   }
 }
 
-.assortment__additional-list {
-  @include list-style;
-
-  @media (min-width: $desktop-width) {
-    width: 896px;
-  }
-}
-
-.additional-card__heading {
-  text-transform: uppercase;
-  color: special_dark-grey-2;
-}
-
-.assortment__banner {
-  position: relative;
-  z-index: 0;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  background-image: url("../../images/catalog/banner/banner-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  color: $white;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../images/catalog/banner/banner-background-mobile@2x.jpg");
-    background-size: 280px auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../images/catalog/banner/banner-background-tablet@1x.jpg");
-
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/catalog/banner/banner-background-tablet@2x.jpg");
-      background-size: 707px auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    background-image: url("../../images/catalog/banner/banner-background-desktop@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/catalog/banner/banner-background-desktop@2x.jpg");
-      background-size: 245px auto;
-    }
-  }
-}
-
-.assortment__banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: $basic-green-transparent;
-}
-
-.assortment__text::before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 78px;
-  height: 81px;
-  margin-bottom: 48px;
-  background-image: url("../../icons/stack.svg#gift-icon");
-}
