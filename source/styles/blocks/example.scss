@@ -162,6 +162,7 @@
 .example__slider {
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
   width: 280px;
   height: 256px;
   margin-top: 20px;
@@ -184,8 +185,15 @@
   position: absolute;
   width: auto;
   height: auto;
-  overflow: hidden;
   top: 0;
+}
+
+.example__slider-image-before {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.example__slider-image-after {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
 .example__slider-image {
@@ -209,6 +217,9 @@
   background-color: $special-grey-2;
   border: none;
   border-radius: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     height: 512px;
