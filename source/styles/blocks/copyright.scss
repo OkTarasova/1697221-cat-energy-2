@@ -32,6 +32,10 @@
   }
 }
 
+.copyright:focus {
+  outline: none;
+}
+
 .copyright:hover .copyright__text::after,
 .copyright:focus .copyright__text::after {
   background-color: $basic-green;

@@ -18,12 +18,12 @@
 
 .additional-products__list {
   @include list-style;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,16 +60,31 @@
   background-size: cover;
   color: $white;
 
+  @supports (background-image: url("../../images/catalog/banner/banner-background-mobile@1x.webp")) {
+    background-image: url("../../images/catalog/banner/banner-background-mobile@1x.webp");
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/catalog/banner/banner-background-mobile@2x.jpg");
+
+    @supports (background-image: url("../../images/catalog/banner/banner-background-mobile@2x.webp")) {
+      background-image: url("../../images/catalog/banner/banner-background-mobile@2x.webp");
+    }
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/catalog/banner/banner-background-tablet@1x.jpg");
 
+    @supports (background-image: url("../../images/catalog/banner/banner-background-tablet@1x.webp")) {
+      background-image: url("../../images/catalog/banner/banner-background-tablet@1x.webp");
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/catalog/banner/banner-background-tablet@2x.jpg");
+
+      @supports (background-image:  url("../../images/catalog/banner/banner-background-tablet@2x.webp")) {
+        background-image: url("../../images/catalog/banner/banner-background-tablet@2x.webp");
+      }
     }
   }
 
@@ -78,8 +93,17 @@
     margin-bottom: auto;
     background-image: url("../../images/catalog/banner/banner-background-desktop@1x.jpg");
 
+    @supports (background-image:url("../../images/catalog/banner/banner-background-desktop@1x.webp")) {
+      background-image: url("../../images/catalog/banner/banner-background-desktop@1x.webp");
+    }
+
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/catalog/banner/banner-background-desktop@2x.jpg");
+
+      @supports (background-image: url("../../images/catalog/banner/banner-background-desktop@2x.webp")) {
+        background-image: url("../../images/catalog/banner/banner-background-desktop@2x.webp");
+      }
     }
   }
 }
@@ -111,7 +135,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-products__banner {
-    padding: 57px 125px 60px 77px;
+    padding: 59px 125px 60px 77px;
   }
 
   .additional-products__banner-text {

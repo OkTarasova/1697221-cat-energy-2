@@ -114,6 +114,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .description__item::after {
+    right: 75px;
+  }
+
   .description__item:nth-child(1)::after {
     right: 100px;
   }
@@ -125,10 +129,6 @@
   .description__item:nth-child(3)::after {
     right: 77px;
   }
-
-  .description__item:nth-child(4)::after {
-    right: 75px;
-  }
 }
 
 .description__text {
@@ -138,12 +138,16 @@
 .description__text br {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .description__item::after {
+    right: 1px;
+  }
+
   .description__item:nth-child(1)::after {
     right: 26px;
   }
@@ -154,9 +158,5 @@
 
   .description__item:nth-child(3)::after {
     right: 3px;
-  }
-
-  .description__item:nth-child(4)::after {
-    right: 1px;
   }
 }

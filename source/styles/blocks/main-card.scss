@@ -1,6 +1,5 @@
 .main-card {
-  padding: 20px;
-  padding-bottom: 25px;
+  padding: 21px 20px 24px;
 
   @media (max-width: $mobile-width) {
     display: grid;
@@ -55,7 +54,7 @@
   flex-direction: column;
 
   @media (max-width: $mobile-width) {
-    grid-template-columns: 2/3;
+    grid-column: 2/3;
     grid-row: 1/2;
     row-gap: 15px;
   }
@@ -70,11 +69,11 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
   }
 
   &:hover {
@@ -100,11 +99,11 @@
   @include list-style;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 }
 
@@ -118,13 +117,13 @@
     font-size: 16px;
     line-height: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
   }
 }
 

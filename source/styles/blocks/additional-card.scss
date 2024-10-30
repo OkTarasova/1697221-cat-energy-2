@@ -1,18 +1,18 @@
 .additional-card {
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   display: grid;
   grid-template-columns: 70% 30%;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50% 1fr 93px;
     align-items: center;
-    padding: 28px 38px;
+    padding: 26px 37px 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 305px 224px 62px 244px;
     column-gap: 20px;
-    padding: 15px 0;
+    padding: 15px 0 16px;
   }
 }
 
@@ -31,7 +31,7 @@
 .additional-card span {
   line-height: 14px;
   color: $dark-grey;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

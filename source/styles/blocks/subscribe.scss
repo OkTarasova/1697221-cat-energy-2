@@ -73,7 +73,7 @@
 .subscribe__field {
   width: 100%;
   margin-bottom: 16px;
-  padding: 14px 13px 10px;
+  padding: 15px 12px 9px;
   font-size: 20px;
   line-height: 30px;
   border: 1px solid #e7e7e7;
@@ -89,14 +89,14 @@
   }
 
   &:focus {
-    padding: 8px 12px;
-    border: 2px solid $dark-grey;
+    outline: 2px solid $dark-grey;
+    outline-offset: -2px;
   }
 }
 
 .subscribe__field.invalid {
-  padding: 8px 12px;
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }
 
 .subscribe__field::placeholder {
