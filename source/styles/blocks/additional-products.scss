@@ -60,57 +60,28 @@
   background-size: cover;
   color: $white;
 
-  @supports (background-image: url("../../images/catalog/banner/banner-background-mobile@1x.webp")) {
-    background-image: url("../../images/catalog/banner/banner-background-mobile@1x.webp");
-  }
-
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/catalog/banner/banner-background-mobile@2x.jpg");
-
-    @supports (background-image: url("../../images/catalog/banner/banner-background-mobile@2x.webp")) {
-      background-image: url("../../images/catalog/banner/banner-background-mobile@2x.webp");
-    }
   }
-}
 
-@media (min-width: $tablet-width) {
-  .additional-products__banner {
+  @media (min-width: $tablet-width) {
     background-image: url("../../images/catalog/banner/banner-background-tablet@1x.jpg");
-
-    @supports (background-image: url("../../images/catalog/banner/banner-background-tablet@1x.webp")) {
-      background-image: url("../../images/catalog/banner/banner-background-tablet@1x.webp");
-    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/catalog/banner/banner-background-tablet@2x.jpg");
-
-      @supports (background-image:  url("../../images/catalog/banner/banner-background-tablet@2x.webp")) {
-        background-image: url("../../images/catalog/banner/banner-background-tablet@2x.webp");
-      }
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-products__banner {
+  @media (min-width: $desktop-width) {
     width: 245px;
     margin-bottom: auto;
     background-image: url("../../images/catalog/banner/banner-background-desktop@1x.jpg");
 
-    @supports (background-image:url("../../images/catalog/banner/banner-background-desktop@1x.webp")) {
-      background-image: url("../../images/catalog/banner/banner-background-desktop@1x.webp");
-    }
-
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/catalog/banner/banner-background-desktop@2x.jpg");
-
-      @supports (background-image: url("../../images/catalog/banner/banner-background-desktop@2x.webp")) {
-        background-image: url("../../images/catalog/banner/banner-background-desktop@2x.webp");
-      }
     }
   }
 }
-
 
 .additional-products__banner::before {
   content: "";
